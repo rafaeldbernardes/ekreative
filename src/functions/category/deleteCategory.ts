@@ -1,7 +1,7 @@
 import { handlerPath } from '@libs/handler-resolver';
 
 export default {
-  handler: `${handlerPath(__dirname)}/deleteCategoryHandler.handler`,
+  handler: `${handlerPath(__dirname)}/handlers/deleteCategoryHandler.handler`,
   events: [
     {
       http: {

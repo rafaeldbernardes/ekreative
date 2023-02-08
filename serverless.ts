@@ -1,6 +1,14 @@
 import type { AWS } from "@serverless/typescript";
 
 import createProduct from '@functions/product/createProduct';
+import getProduct from '@functions/product/getProduct';
+import deleteProduct from '@functions/product/deleteProduct';
+import getProducts from '@functions/product/getProducts';
+
+import createCategory from '@functions/category/createCategory';
+import getCategory from '@functions/category/getCategory';
+import deleteCategory from '@functions/category/deleteCategory';
+import getCategories from '@functions/category/getCategories';
 
 const serverlessConfiguration: AWS = {
   service: 'ekreative-test',
@@ -32,7 +40,7 @@ const serverlessConfiguration: AWS = {
     ]
   },
   // import the function via paths
-  functions: { createProduct },
+  functions: { createProduct, getProduct, deleteProduct, getProducts, createCategory, getCategory, getCategories, deleteCategory },
   package: { individually: true },
   custom: {
     esbuild: {
