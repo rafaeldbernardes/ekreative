@@ -1,4 +1,4 @@
-# Ekreative test - AWS | Node.js | Typescript
+# Ekreative - AWS | Node.js | Typescript
 
 ## Installation/deployment instructions
 
@@ -17,6 +17,11 @@ In order to test the lambda functions locally, run the following command:
 
 - `sls dynamodb start --migrate` This is going to start DynamoDB locally in port 5000
 - `npm start` Start the server
+
+### Available API's (running locally)
+
+![Screenshot from 2023-02-07 23-54-41](https://user-images.githubusercontent.com/6866119/217417125-742a5848-bcb5-4011-8cc7-a8682301ca21.png)
+
 
 ## Project structure
 
